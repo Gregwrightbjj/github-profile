@@ -27,7 +27,7 @@ Following: userData.following
    var htmlString = templates.userProf(userObject)
 
  // Append that HTML string to the container on the page
-        $("#user-container").append(htmlString);
+    $("#user-container").append(htmlString);
 		}
 	})
 }
@@ -54,8 +54,10 @@ fork_url: repoData.fork_url,
 description: repoData.description,
 updated: repoData.updated_at
 }
-var htmlS = templates.repos(repoObject)
-  $("#repo-container").append(htmlS);
+// Creates an html string with the Handlebars template and our new object
+var htmlString2= templates.repos(repoObject)
+// Append that HTML string to the container on the page
+ $("#repo-container").append(htmlString2);
 
 		}
 	})
@@ -74,20 +76,16 @@ var getTemplates = function(){
   templates.userProf = Handlebars.compile(userDataString)
 
  
-
-
 // Again for Repo
   var repoDataString = $("#theRepo").text()
   templates.repos= Handlebars.compile(repoDataString)
-  
-
 }
 
 
 //Bind listener to on-load
 $(document).on("ready", function(){
 
-	getTemplates();
-	getUserAccount();
+	getTemplates()
+	getUserAccount()
 	getUserRepo();
 })
