@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="libs/underscore.js"></script>
+    	<script src="libs/jquery.js"></script>
+    	<script src="libs/handlebars.js"></script>
+	</head>
+		<body>
+			<div id="user-container"></div>
+			<div id="repo-container"></div>
+
+			<script src="index.js"></script>
+			<script type="x-handlebars-template" id="userInfo">
+				<div class = "userProf">
+					<div class = "box1">
+					<div class="avatar"><img src="{{avatar}}"/></div>
+					<div class = "name">{{name}}</div>
+					<div class = "userName">{{userName}}</div>
+					</div>
+					<div class= "box2">
+					<div class = "company">{{company}}</div>
+					<div class = "location">{{location}}</div>
+					<div class = "email">{{email}}</div>
+					<div class = "joinedDate">{{joinedDate}}</div>
+					<div class = "blog">{{blog}}</div>
+					</div>
+					<div class = "box3">
+					<div class = "FSF">
+						<div class = "followers">
+							<p>{{Followers}}</p><br/>
+							<p>followers</p>
+						</div>
+						<div class = "Starred">
+							<p>{{Starred}}</p><br/>
+							<p>Starred</p>
+						</div>
+						<div class = "following">
+							<p>{{Following}}</p><br/>
+							<p>Following</p>
+						</div>
+					</div>
+					</div>
+				</div>	
+			</script>
+			
+			<script type="x-handlebars-template" id="theRepo">
+				<div class = "repos">
+					<div class = "nameRepo">{{name}}
+						<span>{{language}}</span>
+						<span>{{stargazers}}</span>
+						<span>{{forkCount}}</span>
+					</div>
+					<div class = "forkFrom">{{fork_url}}</div>
+					<div class = "description">{{description}}</div>
+					<div class = "updated">{{updated}}</div>
+				</div>	
+			</script>
+		</body>
+
+</html>
