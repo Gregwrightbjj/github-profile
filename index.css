@@ -1,5 +1,5 @@
 *{
-	margin: 0;
+	margin:0;
 	padding: 0;
 	box-sizing:border-box;
 }
@@ -8,32 +8,78 @@
 	height: 100vh;
 	
 }
-
-
-.box1{
-	border-bottom: solid black 1px;
-
-}
-.box2{
-border-bottom: solid black 1px;
-}
-.box3{
+img{
+	width: 100%;
+	border-radius: 6px;
 
 }
 #user-container{
 	width: 30%;
 	border: solid 1px black;
+	margin-left: 10px;
+	display:inline-block;
+	height: 100vh;
+	vertical-align: top;
 }
 #repo-container{
-	width: 50%;
-	
-	
-
-}
-.following{
+	width: 60%;
 	display: inline-block;
+	vertical-align: top;
 }
-img{
-	width: 100%;
+.name{
+	font-size: 26px;
+	line-height: 30px;
+	font-weight: bold;
+}
+.userName{
+	font-size: 20px;
+	font-style: normal;
+	
+	line-height: 24px;
+}
 
+.box1{
+	border-bottom: solid lightgray 1px;
+	padding-bottom: 15px;
+}
+.box2{
+	border-bottom: solid lightgray 1px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.company,.location,.email,.joinedDate,.blog{
+	padding-top:4px;
+	padding-bottom:4px;
+}
+.email{
+	color:blue;
+	padding-bottom: 8px;
+}
+.box3{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+.Following, .Starred, .Followers{
+	text-align: center;
+	display: inline-block;
+	width: 32%;
+}
+.numbers{
+	color: blue;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 1;
+}
+.repositories{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #eee;
+}
+.namerepo{
+	font-size: 20px;
+	line-height: 1.2;
+	display: inline-block;
+	color:blue;
 }
