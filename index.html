@@ -4,40 +4,47 @@
 		<script src="libs/underscore.js"></script>
     	<script src="libs/jquery.js"></script>
     	<script src="libs/handlebars.js"></script>
+    	<script src="libs/moment.js"></script>
     	<link rel="stylesheet" type="text/css" href="index.css">
 	</head>
 		<body>
-			<div id = "user-container"></div>
-			<div id = "repo-container"></div>
+			<div class= "bigContainer">
+				<div id = "user-container"></div>
+				<div id = "repo-container"></div>
+			</div>
 			<script src="index.js"></script>
 			<script type="x-handlebars-template" id="userInfo">
 				<div class = "userProfile">
 					<div class = "box1">
-					<div class="avatar"><img src = "{{avatar}}"</div>
-					<div class = "name">{{name}}</div>
-					<div class = "userName">{{userName}}</div>
+						<div class="avatar"><img class = "familyPic"src = "{{avatar}}"</div>
+						<div class = "name">{{name}}</div>
+						<div class = "userName">{{userName}}</div>
 					</div>
 					<div class = "box2">
-					<div class = "company">{{company}}</div>
-					<div class = "location">{{location}}</div>
-					<div class = "email">{{email}}</div>
-					<time datetime = "{{joinedDate}}">Joined on Jan 15, 2015</time>
+						<div class = "company">{{company}}</div>
+						<div class = "location">{{location}}</div>
+						<div class = "email">{{email}}</div>
+						<div class = "joined">Joined on {{joinedDate}}</div>
+						<div class = "blog">{{blog}}</div>
 					</div>
 					<div class = "box3">
-					<div class = "FSF">
-						<div class = "Followers">
-							<p class = "numbers">{{Followers}}</p><br>
-							<p>followers</p>
-						</div>
-						<div class = "Starred">
-							<p class = "numbers">{{Starred}}</p><br>
-							<p>Starred</p>
-						</div>
-						<div class = "Following">
-							<p class = "numbers">{{Following}}</p><br>
-							<p>Following</p>
+						<div class = "FSF">
+							<div class = "Followers">
+								<p class = "numbers">{{Followers}}</p><br>
+								<p>followers</p>
+							</div>
+							<div class = "Starred">
+								<p class = "numbers">{{Starred}}</p><br>
+								<p>Starred</p>
+							</div>
+							<div class = "Following">
+								<p class = "numbers">{{Following}}</p><br>
+								<p>Following</p>
+							</div>
 						</div>
 					</div>
+					<div class= "box4">
+						<div class="organizations"><strong>Organizations</strong></div>
 					</div>
 				</div>	
 			</script>
@@ -45,13 +52,13 @@
 			<script type="x-handlebars-template" id="theRepo">
 				<div class = "repositories">
 					<div class = "namerepo">{{name}}</div>
-						<span >{{language}}</span>
-						<span>{{stargazers}}</span>
+						<span class = "language">{{language}}</span>
+						<img class="star" src="gray-star.gif"/>
+						<span class = "stargazer">{{stargazers}}</span>
 						<span>{{forkCount}}</span>
-					
 					<div class = "forkFrom">{{forks}}</div>
 					<div class = "description">{{description}}</div>
-					<div class = "updated">{{updated}}</div>
+					<div class = "updated">Updated {{updated}}</div>
 				</div>	
 			</script>
 		</body>

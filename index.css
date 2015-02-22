@@ -8,14 +8,14 @@
 	height: 100vh;
 	
 }
-img{
+.familyPic{
 	width: 100%;
 	border-radius: 6px;
 
 }
 #user-container{
 	width: 30%;
-	border: solid 1px black;
+	
 	margin-left: 10px;
 	display:inline-block;
 	height: 100vh;
@@ -25,6 +25,7 @@ img{
 	width: 60%;
 	display: inline-block;
 	vertical-align: top;
+	padding-left: 20px;
 }
 .name{
 	font-size: 26px;
@@ -34,18 +35,19 @@ img{
 .userName{
 	font-size: 20px;
 	font-style: normal;
-	
+	color:#666;
 	line-height: 24px;
 }
 
 .box1{
-	border-bottom: solid lightgray 1px;
+	border-bottom: solid #eee 1px;
 	padding-bottom: 15px;
 }
 .box2{
-	border-bottom: solid lightgray 1px;
+	border-bottom: solid #eee 1px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	font-size: 16px;
 }
 .company,.location,.email,.joinedDate,.blog{
 	padding-top:4px;
@@ -57,7 +59,8 @@ img{
 }
 .box3{
 	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 21px;
+	border-bottom: solid #eee 1px;
 }
 
 
@@ -65,12 +68,23 @@ img{
 	text-align: center;
 	display: inline-block;
 	width: 32%;
+
 }
 .numbers{
 	color: blue;
 	font-size: 28px;
 	font-weight: bold;
 	line-height: 1;
+}
+.letters{
+	color:#999;
+}
+.organizations{
+	font-size: 16px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	line-height: 1.1
+
 }
 .repositories{
 	padding-top: 30px;
@@ -82,4 +96,29 @@ img{
 	line-height: 1.2;
 	display: inline-block;
 	color:blue;
+}
+.description{
+	margin-top: 8px;
+	font-size: 16px;
+	color: #666;
+}
+.updated{
+	margin-top: 11px;
+	font-size: 15px;
+	color: #888;
+}
+.language{
+	position: absolute;
+	right: 13%;
+	margin-top: 4px;
+}
+.stargazer{
+	position: absolute;
+	right: 9%;
+	margin-top: 4px;
+}
+.star{
+	position: absolute;
+	right: 10%;
+	margin-top: 2px;
 }

@@ -18,7 +18,7 @@ var getUserAccount = function(){
 	company: userData.company,
 	location: userData.location,
 	email: userData.email,
-	joinedDate: userData.created_at,
+	joinedDate: moment(userData.created_at).format("ll"),
 	blog: userData.blog,
 	Followers: userData.followers,
 	Following: userData.following
@@ -55,7 +55,7 @@ var getUserRepo = function(){
 		forkCount: repository.fork_count,
 		fork_url: repository.fork_url,
 		description: repository.description,
-		updated: repository.updated_at
+		updated: moment(repository.updated_at).startOf("day").fromNow()
 		}
 
 		// Creates an html string with the Handlebars template and our new object
