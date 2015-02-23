@@ -70,7 +70,7 @@ var getUserRepo = function(){
 
 
 
-
+//Creates empty template
 var templates = {};
 
 var getTemplates = function(){
@@ -82,12 +82,12 @@ var getTemplates = function(){
 
  
 // Again for Repo
-  var repoDataString = $("#theRepo").text()
+  var repoDataString = $("#repoInfo").text()
   templates.repos= Handlebars.compile(repoDataString)
 }
 
 
-//Bind listener to on-load
+//Bind listener to page on-load
 $(document).on("ready", function(){
 
 	getTemplates()
