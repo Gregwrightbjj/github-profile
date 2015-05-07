@@ -1,5 +1,7 @@
 ## Github Profile
 
+http://gregwrightbjj.github.io/github-profile
+
 ### Description
 
 Let's bring together the concepts from this week: AJAX, APIs, and templating. We're going to take data from GitHub's API and recreate your profile's "Repositories" page. (Mine is [here](https://github.com/kylehill?tab=repositories).)
